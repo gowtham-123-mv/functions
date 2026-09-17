@@ -1,0 +1,45 @@
+<html></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions</title>
+</head>
+
+<body>
+
+    <h2>Three Types of JavaScript Functions</h2>
+
+    <p id="output"></p>
+
+    <script>
+        // 1. Function Declaration
+        function add(a, b) {
+            return a + b;
+        }
+
+        // 2. Function Expression
+        const subtract = function(a, b) {
+            return a - b;
+        };
+
+        // 3. Arrow Function
+        const multiply = (a, b) => {
+            return a * b;
+        };
+
+        // Calling the functions
+        let result1 = add(10, 5);
+        let result2 = subtract(10, 5);
+        let result3 = multiply(10, 5);
+
+        // Displaying the results in the browser
+        document.getElementById("output").innerHTML =
+            "Addition: " + result1 + "<br>" +
+            "Subtraction: " + result2 + "<br>" +
+            "Multiplication: " + result3;
+    </script>
+
+</body>
+</html>
+
+
